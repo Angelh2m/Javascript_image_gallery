@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Slider</title>
+    </head>
+    <link rel="stylesheet" href='css/style.css' />
+    <body>
+
+        <div class='nexprev' style="z-index: 999; position: absolute;">
+          <button class="prev">
+            <span class="offscreen icon-chevron-left"></span>
+          </button>
+          <button class="next">
+            <span class="offscreen icon-chevron-right "></span>
+          </button>
+        </div>
+
+        <ul class="slider">
+          <li class=' active' data-value='white' style='background-image: url("images/image1.jpg");'>  </li>
+          <li class=' ' data-value='black' style='background-image: url("images/image2.jpg");'>  </li>
+          <li class=' ' data-value='white'style='background-image: url("images/image3.jpg");'>  </li>
+          <li class=' ' data-value='black' style='background-image: url("images/image4.jpg");'>  </li>
+          <li class=' ' data-value='white' style='background-image: url("images/image5.jpg");'>  </li>
+
+        </ul>
+
+    </body>
+
+  <script type='text/javascript' src="js/__slideshow.js"></script>
+
+</html>

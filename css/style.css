@@ -1,0 +1,112 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+img{
+  width: 100%;
+
+}
+
+.nexprev{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+   -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+           justify-content: space-between;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   width: 100%;
+   top: 50%;
+
+}
+
+.nexprev button{
+  border: solid 0px;
+    background-color: transparent;
+}
+
+.slider .active{
+  display: block;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+
+
+}
+
+.slider li {
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  /*Transition*/
+  opacity: .0;
+  -webkit-transition: opacity 0.9s;
+  -moz-transition: opacity 0.9s;
+  -o-transition: opacity 0.9s;
+
+
+
+
+}
+
+.carouselbox li{
+  position: absolute;
+  list-style: none;
+}
+
+.item{
+  z-index: -99;
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?w1zncq');
+  src:  url('../fonts/icomoon.eot?w1zncq#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w1zncq') format('truetype'),
+    url('../fonts/icomoon.woff?w1zncq') format('woff'),
+    url('../fonts/icomoon.svg?w1zncq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-left:before {
+  content: "\e900";
+}
+.icon-chevron-right:before {
+  content: "\e901";
+}
+
+.nexprev span{
+  font-size: 3em;
+
+}
